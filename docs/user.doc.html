@@ -105,14 +105,19 @@
                 InviteStatus
             </a>
         </li>
+        <li  title="LearningPathAccessType">
+            <a href="learningpathaccesstype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LearningPathAccessType
+            </a>
+        </li>
         <li  title="Level">
             <a href="level.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Level
             </a>
         </li>
-        <li  title="TeamRole">
-            <a href="teamrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                TeamRole
+        <li  title="RoleName">
+            <a href="rolename.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RoleName
             </a>
         </li>
         <li  title="TrackOrder">
@@ -210,6 +215,11 @@
                 ContainerResources
             </a>
         </li>
+        <li  title="ContentTrial">
+            <a href="contenttrial.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContentTrial
+            </a>
+        </li>
         <li  title="GcpProjectConfig">
             <a href="gcpprojectconfig.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 GcpProjectConfig
@@ -245,6 +255,16 @@
                 OrganizationFeatures
             </a>
         </li>
+        <li  title="OrganizationInvite">
+            <a href="organizationinvite.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationInvite
+            </a>
+        </li>
+        <li  title="OrganizationMember">
+            <a href="organizationmember.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationMember
+            </a>
+        </li>
         <li  title="OrganizationSeries">
             <a href="organizationseries.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrganizationSeries
@@ -258,6 +278,11 @@
         <li  title="OrganizationTheme">
             <a href="organizationtheme.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrganizationTheme
+            </a>
+        </li>
+        <li  title="OrganizationUserEdge">
+            <a href="organizationuseredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserEdge
             </a>
         </li>
         <li  title="Player">
@@ -325,9 +350,19 @@
                 User
             </a>
         </li>
+        <li  title="UserOrganizationEdge">
+            <a href="userorganizationedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserOrganizationEdge
+            </a>
+        </li>
         <li  title="UserProfile">
             <a href="userprofile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UserProfile
+            </a>
+        </li>
+        <li  title="UserTrials">
+            <a href="usertrials.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserTrials
             </a>
         </li>
         <li  title="VirtualMachineConfig">
@@ -539,7 +574,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">User</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Unique ID</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The user's profile</span></span></li><li><span class="tab"><span class="meta">profile</span>: <a class="support type" href="userprofile.doc.html">UserProfile</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">User</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Unique ID</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The user's profile</span></span></li><li><span class="tab"><span class="meta">profile</span>: <a class="support type" href="userprofile.doc.html">UserProfile</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The trials started by a user.</span></span></li><li><span class="tab"><span class="meta">trials</span>: <a class="support type" href="usertrials.doc.html">UserTrials</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The organizations this user is a member of</span></span></li><li><span class="tab"><span class="meta">organizations</span>: [<a class="support type" href="userorganizationedge.doc.html">UserOrganizationEdge</a>!]! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -550,7 +585,9 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="inviteclaim.doc.html" title="InviteClaim - A claim is a used that has accepted an invite">InviteClaim<em>A claim is a used that has accepted an invite</em></a><li><li><a href="learningpath.doc.html" title="LearningPath - A Learning path is a set of courses">LearningPath<em>A Learning path is a set of courses</em></a><li><li><a href="mutation.doc.html" title="Mutation - ">Mutation<em>null</em></a><li><li><a href="organization.doc.html" title="Organization - An organization has members, and owns topics and tracks">Organization<em>An organization has members, and owns topics and tracks</em></a><li><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li><li><a href="team.doc.html" title="Team - ">Team<em>null</em></a><li><li><a href="track.doc.html" title="Track - A track consists of a list of challenges">Track<em>A track consists of a list of challenges</em></a><li></ul>
+        <ul class="require-by"><li><a href="inviteclaim.doc.html" title="InviteClaim - A claim is a used that has accepted an invite">InviteClaim<em>A claim is a used that has accepted an invite</em></a><li><li><a href="learningpath.doc.html" title="LearningPath - A Learning path is a set of courses">LearningPath<em>A Learning path is a set of courses</em></a><li><li><a href="mutation.doc.html" title="Mutation - ">Mutation<em>null</em></a><li><li><a href="organizationmember.doc.html" title="OrganizationMember - Member of an organization
+TODO: IN-364 Remove deprecated type.">OrganizationMember<em>Member of an organization
+TODO: IN-364 Remove deprecated type.</em></a><li><li><a href="organizationuseredge.doc.html" title="OrganizationUserEdge - Represents the user's which are member of an organization.">OrganizationUserEdge<em>Represents the user's which are member of an organization.</em></a><li><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li><li><a href="team.doc.html" title="Team - ">Team<em>null</em></a><li><li><a href="track.doc.html" title="Track - A track consists of a list of challenges">Track<em>A track consists of a list of challenges</em></a><li></ul>
     </div>
 </section>
 <footer>

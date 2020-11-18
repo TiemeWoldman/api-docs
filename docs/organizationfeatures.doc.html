@@ -105,14 +105,19 @@
                 InviteStatus
             </a>
         </li>
+        <li  title="LearningPathAccessType">
+            <a href="learningpathaccesstype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LearningPathAccessType
+            </a>
+        </li>
         <li  title="Level">
             <a href="level.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Level
             </a>
         </li>
-        <li  title="TeamRole">
-            <a href="teamrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                TeamRole
+        <li  title="RoleName">
+            <a href="rolename.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RoleName
             </a>
         </li>
         <li  title="TrackOrder">
@@ -210,6 +215,11 @@
                 ContainerResources
             </a>
         </li>
+        <li  title="ContentTrial">
+            <a href="contenttrial.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContentTrial
+            </a>
+        </li>
         <li  title="GcpProjectConfig">
             <a href="gcpprojectconfig.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 GcpProjectConfig
@@ -245,6 +255,16 @@
                 OrganizationFeatures
             </a>
         </li>
+        <li  title="OrganizationInvite">
+            <a href="organizationinvite.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationInvite
+            </a>
+        </li>
+        <li  title="OrganizationMember">
+            <a href="organizationmember.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationMember
+            </a>
+        </li>
         <li  title="OrganizationSeries">
             <a href="organizationseries.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrganizationSeries
@@ -258,6 +278,11 @@
         <li  title="OrganizationTheme">
             <a href="organizationtheme.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrganizationTheme
+            </a>
+        </li>
+        <li  title="OrganizationUserEdge">
+            <a href="organizationuseredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserEdge
             </a>
         </li>
         <li  title="Player">
@@ -325,9 +350,19 @@
                 User
             </a>
         </li>
+        <li  title="UserOrganizationEdge">
+            <a href="userorganizationedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserOrganizationEdge
+            </a>
+        </li>
         <li  title="UserProfile">
             <a href="userprofile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UserProfile
+            </a>
+        </li>
+        <li  title="UserTrials">
+            <a href="usertrials.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserTrials
             </a>
         </li>
         <li  title="VirtualMachineConfig">
@@ -539,7 +574,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">OrganizationFeatures</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The maximum number of members in this organization</span></span></li><li><span class="tab"><span class="meta">max_members</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The maximum number of tracks that can be created</span></span></li><li><span class="tab"><span class="meta">max_tracks</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The maximum timelimit for a single track</span></span></li><li><span class="tab"><span class="meta">max_timelimit</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether private content is allowed</span></span></li><li><span class="tab"><span class="meta">private_content</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether containers can be used</span></span></li><li><span class="tab"><span class="meta">containers</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether virtual machines can be used</span></span></li><li><span class="tab"><span class="meta">virtual_machines</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether vm pooling can be used</span></span></li><li><span class="tab"><span class="meta">vm_pooling</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether GCP projects can be used</span></span></li><li><span class="tab"><span class="meta">gcp_projects</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether AWS accounts can be used</span></span></li><li><span class="tab"><span class="meta">aws_accounts</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether Azure subscriptions can be used</span></span></li><li><span class="tab"><span class="meta">azure_subscriptions</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether Alicloud accounts can be used</span></span></li><li><span class="tab"><span class="meta">alicloud_accounts</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether invites can be created</span></span></li><li><span class="tab"><span class="meta">invites</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether statistics are accessible</span></span></li><li><span class="tab"><span class="meta">statistics</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether tracks can be embedded in other pages</span></span></li><li><span class="tab"><span class="meta">embedded</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether arcades can be used</span></span></li><li><span class="tab"><span class="meta">arcades</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Wether organization members can skip to a challenge</span></span></li><li><span class="tab"><span class="meta">members_skip_to_challenge</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether pooling can be used</span></span></li><li><span class="tab"><span class="meta">pooling</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">OrganizationFeatures</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The maximum number of members in this organization</span></span></li><li><span class="tab"><span class="meta">max_members</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The maximum number of tracks that can be created</span></span></li><li><span class="tab"><span class="meta">max_tracks</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The maximum timelimit for a single track</span></span></li><li><span class="tab"><span class="meta">max_timelimit</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether private content is allowed</span></span></li><li><span class="tab"><span class="meta">private_content</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether containers can be used</span></span></li><li><span class="tab"><span class="meta">containers</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether virtual machines can be used</span></span></li><li><span class="tab"><span class="meta">virtual_machines</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether vm pooling can be used</span></span></li><li><span class="tab"><span class="meta">vm_pooling</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether GCP projects can be used</span></span></li><li><span class="tab"><span class="meta">gcp_projects</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether AWS accounts can be used</span></span></li><li><span class="tab"><span class="meta">aws_accounts</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether Azure subscriptions can be used</span></span></li><li><span class="tab"><span class="meta">azure_subscriptions</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether Alicloud accounts can be used</span></span></li><li><span class="tab"><span class="meta">alicloud_accounts</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether invites can be created</span></span></li><li><span class="tab"><span class="meta">invites</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether statistics are accessible</span></span></li><li><span class="tab"><span class="meta">statistics</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether tracks can be embedded in other pages</span></span></li><li><span class="tab"><span class="meta">embedded</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether arcades can be used</span></span></li><li><span class="tab"><span class="meta">arcades</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether organization members can skip to a challenge</span></span></li><li><span class="tab"><span class="meta">members_skip_to_challenge</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether pooling can be used</span></span></li><li><span class="tab"><span class="meta">pooling</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether role based access control is enabled</span></span></li><li><span class="tab"><span class="meta">role_based_access_control</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

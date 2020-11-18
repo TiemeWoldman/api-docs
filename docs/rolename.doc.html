@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>TeamRole</title>
+    <title>RoleName</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -105,14 +105,19 @@
                 InviteStatus
             </a>
         </li>
+        <li  title="LearningPathAccessType">
+            <a href="learningpathaccesstype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LearningPathAccessType
+            </a>
+        </li>
         <li  title="Level">
             <a href="level.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Level
             </a>
         </li>
-        <li class="slds-is-active" title="TeamRole">
-            <a href="teamrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                TeamRole
+        <li class="slds-is-active" title="RoleName">
+            <a href="rolename.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RoleName
             </a>
         </li>
         <li  title="TrackOrder">
@@ -210,6 +215,11 @@
                 ContainerResources
             </a>
         </li>
+        <li  title="ContentTrial">
+            <a href="contenttrial.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContentTrial
+            </a>
+        </li>
         <li  title="GcpProjectConfig">
             <a href="gcpprojectconfig.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 GcpProjectConfig
@@ -245,6 +255,16 @@
                 OrganizationFeatures
             </a>
         </li>
+        <li  title="OrganizationInvite">
+            <a href="organizationinvite.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationInvite
+            </a>
+        </li>
+        <li  title="OrganizationMember">
+            <a href="organizationmember.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationMember
+            </a>
+        </li>
         <li  title="OrganizationSeries">
             <a href="organizationseries.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrganizationSeries
@@ -258,6 +278,11 @@
         <li  title="OrganizationTheme">
             <a href="organizationtheme.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrganizationTheme
+            </a>
+        </li>
+        <li  title="OrganizationUserEdge">
+            <a href="organizationuseredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserEdge
             </a>
         </li>
         <li  title="Player">
@@ -325,9 +350,19 @@
                 User
             </a>
         </li>
+        <li  title="UserOrganizationEdge">
+            <a href="userorganizationedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserOrganizationEdge
+            </a>
+        </li>
         <li  title="UserProfile">
             <a href="userprofile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UserProfile
+            </a>
+        </li>
+        <li  title="UserTrials">
+            <a href="usertrials.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserTrials
             </a>
         </li>
         <li  title="VirtualMachineConfig">
@@ -526,7 +561,7 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">ENUM</p>
-        <h1 class="slds-text-heading--large">TeamRole</h1>
+        <h1 class="slds-text-heading--large">RoleName</h1>
         <div class="slds-text-body--regular"></div>
     </div>
 </section>
@@ -538,7 +573,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">enum</span> <span class="identifier">TeamRole</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">owner</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">admin</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">member</span></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">enum</span> <span class="identifier">RoleName</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">owner</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">content_creator</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">member</span></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -549,7 +584,9 @@
             </a>
             Require by
         </h2>
-        <div class="require-by anyone">This element is not required by anyone</div>
+        <ul class="require-by"><li><a href="mutation.doc.html" title="Mutation - ">Mutation<em>null</em></a><li><li><a href="organizationinvite.doc.html" title="OrganizationInvite - OrganizationInvite represents an outstanding invite for an email address to join the organization">OrganizationInvite<em>OrganizationInvite represents an outstanding invite for an email address to join the organization</em></a><li><li><a href="organizationmember.doc.html" title="OrganizationMember - Member of an organization
+TODO: IN-364 Remove deprecated type.">OrganizationMember<em>Member of an organization
+TODO: IN-364 Remove deprecated type.</em></a><li><li><a href="organizationuseredge.doc.html" title="OrganizationUserEdge - Represents the user's which are member of an organization.">OrganizationUserEdge<em>Represents the user's which are member of an organization.</em></a><li><li><a href="userorganizationedge.doc.html" title="UserOrganizationEdge - Represents a user's relationship to an organization">UserOrganizationEdge<em>Represents a user's relationship to an organization</em></a><li></ul>
     </div>
 </section>
 <footer>

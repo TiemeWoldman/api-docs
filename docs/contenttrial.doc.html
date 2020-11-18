@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>SecureToken</title>
+    <title>ContentTrial</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -215,7 +215,7 @@
                 ContainerResources
             </a>
         </li>
-        <li  title="ContentTrial">
+        <li class="slds-is-active" title="ContentTrial">
             <a href="contenttrial.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ContentTrial
             </a>
@@ -295,7 +295,7 @@
                 Ranking
             </a>
         </li>
-        <li class="slds-is-active" title="SecureToken">
+        <li  title="SecureToken">
             <a href="securetoken.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 SecureToken
             </a>
@@ -561,8 +561,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">SecureToken</h1>
-        <div class="slds-text-body--regular"><p>SecureToken for a user</p>
+        <h1 class="slds-text-heading--large">ContentTrial</h1>
+        <div class="slds-text-body--regular"><p>Contains information about a user&#39;s content trial.</p>
 </div>
     </div>
 </section>
@@ -574,7 +574,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">SecureToken</span> {</li><li></li><li><span class="tab"><span class="comment line">#   User ID</span></span></li><li><span class="tab"><span class="meta">userID</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   IDToken for user</span></span></li><li><span class="tab"><span class="meta">idToken</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   RefreshToken for user</span></span></li><li><span class="tab"><span class="meta">refreshToken</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ContentTrial</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Instant the user's content trial started, empty if the user hasn't started the </span></span></li><li><span class="tab"><span class="comment line">#   content trial.</span></span></li><li><span class="tab"><span class="meta">started_at</span>: <a class="support type" href="time.doc.html">Time</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Instant the user's content trial expires, empty if the user hasn't started the </span></span></li><li><span class="tab"><span class="comment line">#   content trial.</span></span></li><li><span class="tab"><span class="meta">expires_at</span>: <a class="support type" href="time.doc.html">Time</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Instant the user requested full access to the content trial.</span></span></li><li><span class="tab"><span class="meta">requested_full_access_at</span>: <a class="support type" href="time.doc.html">Time</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether the content trial is active for the given user.</span></span></li><li><span class="tab"><span class="meta">active</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -585,7 +585,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="mutation.doc.html" title="Mutation - ">Mutation<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="usertrials.doc.html" title="UserTrials - Contains information about a user's trials.">UserTrials<em>Contains information about a user's trials.</em></a><li></ul>
     </div>
 </section>
 <footer>

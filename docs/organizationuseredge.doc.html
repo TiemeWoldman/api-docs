@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>SecureToken</title>
+    <title>OrganizationUserEdge</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -280,7 +280,7 @@
                 OrganizationTheme
             </a>
         </li>
-        <li  title="OrganizationUserEdge">
+        <li class="slds-is-active" title="OrganizationUserEdge">
             <a href="organizationuseredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrganizationUserEdge
             </a>
@@ -295,7 +295,7 @@
                 Ranking
             </a>
         </li>
-        <li class="slds-is-active" title="SecureToken">
+        <li  title="SecureToken">
             <a href="securetoken.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 SecureToken
             </a>
@@ -561,8 +561,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">SecureToken</h1>
-        <div class="slds-text-body--regular"><p>SecureToken for a user</p>
+        <h1 class="slds-text-heading--large">OrganizationUserEdge</h1>
+        <div class="slds-text-body--regular"><p>Represents the user&#39;s which are member of an organization.</p>
 </div>
     </div>
 </section>
@@ -574,7 +574,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">SecureToken</span> {</li><li></li><li><span class="tab"><span class="comment line">#   User ID</span></span></li><li><span class="tab"><span class="meta">userID</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   IDToken for user</span></span></li><li><span class="tab"><span class="meta">idToken</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   RefreshToken for user</span></span></li><li><span class="tab"><span class="meta">refreshToken</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">OrganizationUserEdge</span> {</li><li></li><li><span class="tab"><span class="comment line">#   ID of this edge; the compound of the org ID and the user ID.</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The target user.</span></span></li><li><span class="tab"><span class="meta">node</span>: <a class="support type" href="user.doc.html">User</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The user's role within this organization.</span></span></li><li><span class="tab"><span class="meta">role</span>: <a class="support type" href="rolename.doc.html">RoleName</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -585,7 +585,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="mutation.doc.html" title="Mutation - ">Mutation<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="organization.doc.html" title="Organization - An organization has members, and owns topics and tracks">Organization<em>An organization has members, and owns topics and tracks</em></a><li></ul>
     </div>
 </section>
 <footer>

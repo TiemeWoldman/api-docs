@@ -105,14 +105,19 @@
                 InviteStatus
             </a>
         </li>
+        <li  title="LearningPathAccessType">
+            <a href="learningpathaccesstype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LearningPathAccessType
+            </a>
+        </li>
         <li  title="Level">
             <a href="level.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Level
             </a>
         </li>
-        <li  title="TeamRole">
-            <a href="teamrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                TeamRole
+        <li  title="RoleName">
+            <a href="rolename.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RoleName
             </a>
         </li>
         <li  title="TrackOrder">
@@ -210,6 +215,11 @@
                 ContainerResources
             </a>
         </li>
+        <li  title="ContentTrial">
+            <a href="contenttrial.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContentTrial
+            </a>
+        </li>
         <li  title="GcpProjectConfig">
             <a href="gcpprojectconfig.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 GcpProjectConfig
@@ -245,6 +255,16 @@
                 OrganizationFeatures
             </a>
         </li>
+        <li  title="OrganizationInvite">
+            <a href="organizationinvite.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationInvite
+            </a>
+        </li>
+        <li  title="OrganizationMember">
+            <a href="organizationmember.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationMember
+            </a>
+        </li>
         <li  title="OrganizationSeries">
             <a href="organizationseries.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrganizationSeries
@@ -258,6 +278,11 @@
         <li  title="OrganizationTheme">
             <a href="organizationtheme.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrganizationTheme
+            </a>
+        </li>
+        <li  title="OrganizationUserEdge">
+            <a href="organizationuseredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserEdge
             </a>
         </li>
         <li  title="Player">
@@ -325,9 +350,19 @@
                 User
             </a>
         </li>
+        <li  title="UserOrganizationEdge">
+            <a href="userorganizationedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserOrganizationEdge
+            </a>
+        </li>
         <li  title="UserProfile">
             <a href="userprofile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UserProfile
+            </a>
+        </li>
+        <li  title="UserTrials">
+            <a href="usertrials.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserTrials
             </a>
         </li>
         <li  title="VirtualMachineConfig">
@@ -539,7 +574,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">TrackInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Unique ID</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Slug of the track</span></span></li><li><span class="tab"><span class="meta">slug</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Version of the track. Currently not used</span></span></li><li><span class="tab"><span class="meta">version</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Revision of the track. Currently not used</span></span></li><li><span class="tab"><span class="meta">revision</span>: <a class="support type" href="time.doc.html">Time</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Type of the track. One of: track, sandbox. Defaults to track. When choosing </span></span></li><li><span class="tab"><span class="comment line">#   sandbox, the 'check' button changes to 'next'.</span></span></li><li><span class="tab"><span class="meta">type</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Title of the track</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Teaser of the track</span></span></li><li><span class="tab"><span class="meta">teaser</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Description of the track</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Icon of the track</span></span></li><li><span class="tab"><span class="meta">icon</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Level defines the skill level the track is designed for</span></span></li><li><span class="tab"><span class="meta">level</span>: <a class="support type" href="level.doc.html">Level</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   List of tags for this track</span></span></li><li><span class="tab"><span class="meta">tags</span>: [<a class="support type" href="string.doc.html">String</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Slug of the organization that owns the track</span></span></li><li><span class="tab"><span class="meta">owner</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   List of developers for this track</span></span></li><li><span class="tab"><span class="meta">developers</span>: [<a class="support type" href="userinput.doc.html">UserInput</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   If a track is private, it is only visible for organization members</span></span></li><li><span class="tab"><span class="meta">private</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   If a track is not published, it is only visible to track developers</span></span></li><li><span class="tab"><span class="meta">published</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   If a track is in maintenance, it can only be played by developers, but is </span></span></li><li><span class="tab"><span class="comment line">#   visible to others</span></span></li><li><span class="tab"><span class="meta">maintenance</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   If the track should show a timer while playing the track</span></span></li><li><span class="tab"><span class="meta">show_timer</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   List of challenges for this track</span></span></li><li><span class="tab"><span class="meta">challenges</span>: [<a class="support type" href="challengeinput.doc.html">ChallengeInput</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The config for this track</span></span></li><li><span class="tab"><span class="meta">config</span>: <a class="support type" href="trackconfiginput.doc.html">TrackConfigInput</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The scripts for this track</span></span></li><li><span class="tab"><span class="meta">scripts</span>: [<a class="support type" href="trackscriptinput.doc.html">TrackScriptInput</a>!]!</span></li></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">TrackInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Unique ID</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Slug of the track</span></span></li><li><span class="tab"><span class="meta">slug</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Version of the track. Currently not used</span></span></li><li><span class="tab"><span class="meta">version</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Revision of the track. Currently not used</span></span></li><li><span class="tab"><span class="meta">revision</span>: <a class="support type" href="time.doc.html">Time</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Type of the track. One of: track, sandbox. Defaults to track. When choosing </span></span></li><li><span class="tab"><span class="comment line">#   sandbox, the 'check' button changes to 'next'.</span></span></li><li><span class="tab"><span class="meta">type</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Title of the track</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Teaser of the track</span></span></li><li><span class="tab"><span class="meta">teaser</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Description of the track</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Icon of the track</span></span></li><li><span class="tab"><span class="meta">icon</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Level defines the skill level the track is designed for</span></span></li><li><span class="tab"><span class="meta">level</span>: <a class="support type" href="level.doc.html">Level</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   List of tags for this track</span></span></li><li><span class="tab"><span class="meta">tags</span>: [<a class="support type" href="string.doc.html">String</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Slug of the organization that owns the track</span></span></li><li><span class="tab"><span class="meta">owner</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   List of developers for this track</span></span></li><li><span class="tab"><span class="meta">developers</span>: [<a class="support type" href="userinput.doc.html">UserInput</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   If a track is private, it is only visible for organization members</span></span></li><li><span class="tab"><span class="meta">private</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   If a track is not published, it is only visible to track developers</span></span></li><li><span class="tab"><span class="meta">published</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   If a track is in maintenance, it can only be played by developers, but is </span></span></li><li><span class="tab"><span class="comment line">#   visible to others</span></span></li><li><span class="tab"><span class="meta">maintenance</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   If the track should show a timer while playing the track</span></span></li><li><span class="tab"><span class="meta">show_timer</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   If the end user is able to skip to a specific challenge</span></span></li><li><span class="tab"><span class="meta">skipping_enabled</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   List of challenges for this track</span></span></li><li><span class="tab"><span class="meta">challenges</span>: [<a class="support type" href="challengeinput.doc.html">ChallengeInput</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The config for this track</span></span></li><li><span class="tab"><span class="meta">config</span>: <a class="support type" href="trackconfiginput.doc.html">TrackConfigInput</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The scripts for this track</span></span></li><li><span class="tab"><span class="meta">scripts</span>: [<a class="support type" href="trackscriptinput.doc.html">TrackScriptInput</a>!]!</span></li></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

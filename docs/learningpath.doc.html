@@ -105,14 +105,19 @@
                 InviteStatus
             </a>
         </li>
+        <li  title="LearningPathAccessType">
+            <a href="learningpathaccesstype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LearningPathAccessType
+            </a>
+        </li>
         <li  title="Level">
             <a href="level.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Level
             </a>
         </li>
-        <li  title="TeamRole">
-            <a href="teamrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                TeamRole
+        <li  title="RoleName">
+            <a href="rolename.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RoleName
             </a>
         </li>
         <li  title="TrackOrder">
@@ -210,6 +215,11 @@
                 ContainerResources
             </a>
         </li>
+        <li  title="ContentTrial">
+            <a href="contenttrial.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContentTrial
+            </a>
+        </li>
         <li  title="GcpProjectConfig">
             <a href="gcpprojectconfig.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 GcpProjectConfig
@@ -245,6 +255,16 @@
                 OrganizationFeatures
             </a>
         </li>
+        <li  title="OrganizationInvite">
+            <a href="organizationinvite.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationInvite
+            </a>
+        </li>
+        <li  title="OrganizationMember">
+            <a href="organizationmember.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationMember
+            </a>
+        </li>
         <li  title="OrganizationSeries">
             <a href="organizationseries.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrganizationSeries
@@ -258,6 +278,11 @@
         <li  title="OrganizationTheme">
             <a href="organizationtheme.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrganizationTheme
+            </a>
+        </li>
+        <li  title="OrganizationUserEdge">
+            <a href="organizationuseredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserEdge
             </a>
         </li>
         <li  title="Player">
@@ -325,9 +350,19 @@
                 User
             </a>
         </li>
+        <li  title="UserOrganizationEdge">
+            <a href="userorganizationedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserOrganizationEdge
+            </a>
+        </li>
         <li  title="UserProfile">
             <a href="userprofile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UserProfile
+            </a>
+        </li>
+        <li  title="UserTrials">
+            <a href="usertrials.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserTrials
             </a>
         </li>
         <li  title="VirtualMachineConfig">
@@ -539,7 +574,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">LearningPath</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Unique ID</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Slug. This will be visible in the address bar of the browser</span></span></li><li><span class="tab"><span class="meta">slug</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Slug of the organization that owns the learning path</span></span></li><li><span class="tab"><span class="meta">owner</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Permalink will be generated automatically, based on the slug of the learning </span></span></li><li><span class="tab"><span class="comment line">#   path</span></span></li><li><span class="tab"><span class="meta">permalink</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Learning Path Title</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Short Teaser for the learning path</span></span></li><li><span class="tab"><span class="meta">teaser</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Description of the learning path</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Hero image, must be a URL to an image</span></span></li><li><span class="tab"><span class="meta">image</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Level defines the for what skill level the learning path is designed</span></span></li><li><span class="tab"><span class="meta">level</span>: <a class="support type" href="level.doc.html">Level</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Published defines whether the learning path is published</span></span></li><li><span class="tab"><span class="meta">published</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Preview defines whether the learning path is in preview or not</span></span></li><li><span class="tab"><span class="meta">preview</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Accessible defines whether the learning path is accessible for the user, and </span></span></li><li><span class="tab"><span class="comment line">#   thus is ready to play</span></span></li><li><span class="tab"><span class="meta">accessible</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   List of courses that are part of this learning path</span></span></li><li><span class="tab"><span class="meta">courses</span>: [<a class="support type" href="track.doc.html">Track</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   List of authors for this learning path</span></span></li><li><span class="tab"><span class="meta">authors</span>: [<a class="support type" href="user.doc.html">User</a>!]! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">LearningPath</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Unique ID</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Slug. This will be visible in the address bar of the browser</span></span></li><li><span class="tab"><span class="meta">slug</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Slug of the organization that owns the learning path</span></span></li><li><span class="tab"><span class="meta">owner</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Permalink will be generated automatically, based on the slug of the learning </span></span></li><li><span class="tab"><span class="comment line">#   path</span></span></li><li><span class="tab"><span class="meta">permalink</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Learning Path Title</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Short Teaser for the learning path</span></span></li><li><span class="tab"><span class="meta">teaser</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Description of the learning path</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Hero image, must be a URL to an image</span></span></li><li><span class="tab"><span class="meta">image</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Level defines the for what skill level the learning path is designed</span></span></li><li><span class="tab"><span class="meta">level</span>: <a class="support type" href="level.doc.html">Level</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Published defines whether the learning path is published</span></span></li><li><span class="tab"><span class="meta">published</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Preview defines whether the learning path is in preview or not</span></span></li><li><span class="tab"><span class="meta">preview</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Accessible defines whether the learning path is accessible for the user, and </span></span></li><li><span class="tab"><span class="comment line">#   thus is ready to play</span></span></li><li><span class="tab"><span class="meta">accessible</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   List of courses that are part of this learning path</span></span></li><li><span class="tab"><span class="meta">courses</span>: [<a class="support type" href="track.doc.html">Track</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   List of authors for this learning path</span></span></li><li><span class="tab"><span class="meta">authors</span>: [<a class="support type" href="user.doc.html">User</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The reason this user has access to this learning path.</span></span></li><li><span class="tab"><span class="comment line">#   Empty if the user has no access.</span></span></li><li><span class="tab"><span class="meta">access_type</span>: <a class="support type" href="learningpathaccesstype.doc.html">LearningPathAccessType</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

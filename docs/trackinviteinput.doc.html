@@ -105,14 +105,19 @@
                 InviteStatus
             </a>
         </li>
+        <li  title="LearningPathAccessType">
+            <a href="learningpathaccesstype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LearningPathAccessType
+            </a>
+        </li>
         <li  title="Level">
             <a href="level.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Level
             </a>
         </li>
-        <li  title="TeamRole">
-            <a href="teamrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                TeamRole
+        <li  title="RoleName">
+            <a href="rolename.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RoleName
             </a>
         </li>
         <li  title="TrackOrder">
@@ -210,6 +215,11 @@
                 ContainerResources
             </a>
         </li>
+        <li  title="ContentTrial">
+            <a href="contenttrial.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContentTrial
+            </a>
+        </li>
         <li  title="GcpProjectConfig">
             <a href="gcpprojectconfig.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 GcpProjectConfig
@@ -245,6 +255,16 @@
                 OrganizationFeatures
             </a>
         </li>
+        <li  title="OrganizationInvite">
+            <a href="organizationinvite.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationInvite
+            </a>
+        </li>
+        <li  title="OrganizationMember">
+            <a href="organizationmember.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationMember
+            </a>
+        </li>
         <li  title="OrganizationSeries">
             <a href="organizationseries.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrganizationSeries
@@ -258,6 +278,11 @@
         <li  title="OrganizationTheme">
             <a href="organizationtheme.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 OrganizationTheme
+            </a>
+        </li>
+        <li  title="OrganizationUserEdge">
+            <a href="organizationuseredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrganizationUserEdge
             </a>
         </li>
         <li  title="Player">
@@ -325,9 +350,19 @@
                 User
             </a>
         </li>
+        <li  title="UserOrganizationEdge">
+            <a href="userorganizationedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserOrganizationEdge
+            </a>
+        </li>
         <li  title="UserProfile">
             <a href="userprofile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UserProfile
+            </a>
+        </li>
+        <li  title="UserTrials">
+            <a href="usertrials.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserTrials
             </a>
         </li>
         <li  title="VirtualMachineConfig">
@@ -539,7 +574,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">TrackInviteInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Unique ID</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The title of the invite. Will not be shown to end users, but is only for </span></span></li><li><span class="tab"><span class="comment line">#   administration purposes</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   ID of the track the invite is for</span></span></li><li><span class="tab"><span class="meta">track</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The number of times this invite can be used</span></span></li><li><span class="tab"><span class="meta">inviteLimit</span>: <a class="support type" href="int.doc.html">Int</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The TTL until when this invite can be used</span></span></li><li><span class="tab"><span class="meta">inviteTTL</span>: <a class="support type" href="time.doc.html">Time</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The number of plays the end user is allowed to do</span></span></li><li><span class="tab"><span class="meta">playLimit</span>: <a class="support type" href="int.doc.html">Int</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The amount of time the track is available to the end user</span></span></li><li><span class="tab"><span class="meta">playTTL</span>: <a class="support type" href="int.doc.html">Int</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Wether the invite can be claimed as a anonymous user. Defaults to false.</span></span></li><li><span class="tab"><span class="meta">allowAnonymous</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   List of email addresses that are allowed to accept invite</span></span></li><li><span class="tab"><span class="meta">allowedEmailAddresses</span>: [<a class="support type" href="string.doc.html">String</a>!]</span></li></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">TrackInviteInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Unique ID</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The title of the invite. Will not be shown to end users, but is only for </span></span></li><li><span class="tab"><span class="comment line">#   administration purposes</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The IDs of the tracks this invite applies to</span></span></li><li><span class="tab"><span class="meta">trackIDs</span>: [<a class="support type" href="string.doc.html">String</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The number of times this invite can be used</span></span></li><li><span class="tab"><span class="meta">inviteLimit</span>: <a class="support type" href="int.doc.html">Int</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The TTL until when this invite can be used</span></span></li><li><span class="tab"><span class="meta">inviteTTL</span>: <a class="support type" href="time.doc.html">Time</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The number of plays the end user is allowed to do</span></span></li><li><span class="tab"><span class="meta">playLimit</span>: <a class="support type" href="int.doc.html">Int</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The amount of time the track is available to the end user</span></span></li><li><span class="tab"><span class="meta">playTTL</span>: <a class="support type" href="int.doc.html">Int</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   Wheter the invite can be claimed as a anonymous user. Defaults to false.</span></span></li><li><span class="tab"><span class="meta">allowAnonymous</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   List of email addresses that are allowed to accept invite</span></span></li><li><span class="tab"><span class="meta">allowedEmailAddresses</span>: [<a class="support type" href="string.doc.html">String</a>!]</span></li></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
