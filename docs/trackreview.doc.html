@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Int</title>
+    <title>TrackReview</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -55,7 +55,7 @@
                 ID
             </a>
         </li>
-        <li class="slds-is-active" title="Int">
+        <li  title="Int">
             <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Int
             </a>
@@ -330,7 +330,7 @@
                 TrackInvite
             </a>
         </li>
-        <li  title="TrackReview">
+        <li class="slds-is-active" title="TrackReview">
             <a href="trackreview.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 TrackReview
             </a>
@@ -565,9 +565,9 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">SCALAR</p>
-        <h1 class="slds-text-heading--large">Int</h1>
-        <div class="slds-text-body--regular"><p>The <code>Int</code> scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.</p>
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">TrackReview</h1>
+        <div class="slds-text-body--regular"><p>A student&#39;s review of a track.</p>
 </div>
     </div>
 </section>
@@ -579,7 +579,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">scalar</span> <span class="identifier">Int</span></li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">TrackReview</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The ID of this track review.</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The track this review applies to.</span></span></li><li><span class="tab"><span class="meta">track</span>: <a class="support type" href="track.doc.html">Track</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The user which supplied this review.</span></span></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="user.doc.html">User</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The time the review was created.</span></span></li><li><span class="tab"><span class="meta">created_at</span>: <a class="support type" href="time.doc.html">Time</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The time the review was last updated.</span></span></li><li><span class="tab"><span class="meta">updated_at</span>: <a class="support type" href="time.doc.html">Time</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The score the user gave to this track; should be between 1-5.</span></span></li><li><span class="tab"><span class="meta">score</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Written feedback.</span></span></li><li><span class="tab"><span class="meta">content</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -590,7 +590,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="challenge.doc.html" title="Challenge - A challenge is a bite-sized problem that needs to be solved. Each challenge consists of the explanation followed by a hands-on assignment or quiz.">Challenge<em>A challenge is a bite-sized problem that needs to be solved. Each challenge consists of the explanation followed by a hands-on assignment or quiz.</em></a><li><li><a href="challengeinput.doc.html" title="ChallengeInput - A challenge is a bite-sized problem that needs to be solved. Each challenge consists of the explanation followed by a hands-on assignment or quiz.">ChallengeInput<em>A challenge is a bite-sized problem that needs to be solved. Each challenge consists of the explanation followed by a hands-on assignment or quiz.</em></a><li><li><a href="challengenote.doc.html" title="ChallengeNote - A ChallengeNote is displayed when the infrastructure of your challenge is being created. You can display markdown text but also show an image or video.">ChallengeNote<em>A ChallengeNote is displayed when the infrastructure of your challenge is being created. You can display markdown text but also show an image or video.</em></a><li><li><a href="challengenoteinput.doc.html" title="ChallengeNoteInput - A ChallengeNote is displayed when the infrastructure of your challenge is being created. You can display markdown text but also show an image or video.">ChallengeNoteInput<em>A ChallengeNote is displayed when the infrastructure of your challenge is being created. You can display markdown text but also show an image or video.</em></a><li><li><a href="challengeseries.doc.html" title="ChallengeSeries - ">ChallengeSeries<em>null</em></a><li><li><a href="challengestatistics.doc.html" title="ChallengeStatistics - ">ChallengeStatistics<em>null</em></a><li><li><a href="challengetab.doc.html" title="ChallengeTab - A tab shows a service, terminal or (external) website for a challenge">ChallengeTab<em>A tab shows a service, terminal or (external) website for a challenge</em></a><li><li><a href="challengetabinput.doc.html" title="ChallengeTabInput - A tab shows a service, terminal or (external) website for a challenge">ChallengeTabInput<em>A tab shows a service, terminal or (external) website for a challenge</em></a><li><li><a href="containerconfig.doc.html" title="ContainerConfig - A ContainerConfig stores the details of a container">ContainerConfig<em>A ContainerConfig stores the details of a container</em></a><li><li><a href="containerconfiginput.doc.html" title="ContainerConfigInput - A ContainerConfig stores the details of a container">ContainerConfigInput<em>A ContainerConfig stores the details of a container</em></a><li><li><a href="containerresources.doc.html" title="ContainerResources - Deprecated">ContainerResources<em>Deprecated</em></a><li><li><a href="containerresourcesinput.doc.html" title="ContainerResourcesInput - Deprecated">ContainerResourcesInput<em>Deprecated</em></a><li><li><a href="inviteclaim.doc.html" title="InviteClaim - A claim is a used that has accepted an invite">InviteClaim<em>A claim is a used that has accepted an invite</em></a><li><li><a href="mutation.doc.html" title="Mutation - ">Mutation<em>null</em></a><li><li><a href="organizationfeatures.doc.html" title="OrganizationFeatures - OrganizationFeatures define what features are enabled for an organizatin">OrganizationFeatures<em>OrganizationFeatures define what features are enabled for an organizatin</em></a><li><li><a href="organizationseries.doc.html" title="OrganizationSeries - ">OrganizationSeries<em>null</em></a><li><li><a href="organizationstatistics.doc.html" title="OrganizationStatistics - ">OrganizationStatistics<em>null</em></a><li><li><a href="player.doc.html" title="Player - A player is an arcade user">Player<em>A player is an arcade user</em></a><li><li><a href="ranking.doc.html" title="Ranking - Ranking is an entry for an arcade leaderboard">Ranking<em>Ranking is an entry for an arcade leaderboard</em></a><li><li><a href="track.doc.html" title="Track - A track consists of a list of challenges">Track<em>A track consists of a list of challenges</em></a><li><li><a href="trackinvite.doc.html" title="TrackInvite - An invite can be used to invite users outside of an organization to access private tracks">TrackInvite<em>An invite can be used to invite users outside of an organization to access private tracks</em></a><li><li><a href="trackinviteinput.doc.html" title="TrackInviteInput - An invite can be used to invite users outside of an organization to access private tracks">TrackInviteInput<em>An invite can be used to invite users outside of an organization to access private tracks</em></a><li><li><a href="trackreview.doc.html" title="TrackReview - A student's review of a track.">TrackReview<em>A student's review of a track.</em></a><li><li><a href="trackseries.doc.html" title="TrackSeries - ">TrackSeries<em>null</em></a><li><li><a href="trackstatistics.doc.html" title="TrackStatistics - ">TrackStatistics<em>null</em></a><li><li><a href="virtualmachineconfig.doc.html" title="VirtualMachineConfig - A VirtualMachineConfig stores the details of a VM">VirtualMachineConfig<em>A VirtualMachineConfig stores the details of a VM</em></a><li><li><a href="virtualmachineconfiginput.doc.html" title="VirtualMachineConfigInput - A VirtualMachineConfig stores the details of a VM">VirtualMachineConfigInput<em>A VirtualMachineConfig stores the details of a VM</em></a><li></ul>
+        <ul class="require-by"><li><a href="mutation.doc.html" title="Mutation - ">Mutation<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
